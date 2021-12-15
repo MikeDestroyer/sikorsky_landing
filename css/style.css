@@ -1,0 +1,44 @@
+body {
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: url("/assets/img/ys02.png"), url("/assets/img/background.png");
+  background-position: right 20% bottom 0%;
+  background-repeat: no-repeat;
+  height: 770px;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    background-position: right -15% bottom 0%, right 35% bottom 0%;
+    background-size: 499px, auto;
+    height: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    background-position: right -15% bottom 0%, right 25% bottom 0%;
+    background-size: 382px, auto;
+    height: 565px;
+  }
+}
+@media (max-width: 360px) {
+  .hero {
+    background-position: right -15% bottom 0%, right 25% bottom 0%;
+    background-size: 245px, auto;
+    height: 580px;
+  }
+}
+.about-block-line {
+  width: 2px;
+  height: 100%;
+  border: 2px orange solid;
+}
+
+.benefits-li {
+  border: 1px solid #e2e2e2;
+}
+.benefits-span {
+  padding: 10px 0;
+}/*# sourceMappingURL=style.css.map */
