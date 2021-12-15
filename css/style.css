@@ -2,6 +2,11 @@ body {
   box-sizing: border-box;
 }
 
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .hero {
   background-image: url("/assets/img/ys02.png"), url("/assets/img/background.png");
   background-position: right 20% bottom 0%;
@@ -30,15 +35,29 @@ body {
     height: 580px;
   }
 }
-.about-block-line {
-  width: 2px;
+.about-block-text {
+  position: relative;
+  padding-right: 40px;
+}
+.about-block-text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3px;
+  background-color: red;
   height: 100%;
-  border: 2px orange solid;
 }
-
-.benefits-li {
-  border: 1px solid #e2e2e2;
+.about-block-title {
+  justify-content: space-between;
 }
-.benefits-span {
-  padding: 10px 0;
+.about-benefits-item {
+  border: 2px #e2e2e2 solid;
+  height: 102px;
+}
+.about-benefits-item__icon {
+  margin-right: 20px;
+  width: 30px;
+  min-width: 30px;
+  max-width: 30px;
 }/*# sourceMappingURL=style.css.map */

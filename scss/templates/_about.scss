@@ -1,18 +1,39 @@
 .about {
     &-block {
-        &-line {
-            width: 2px;
-            height: 100%;
-            border: 2px orange solid;
+        &-text {
+            position: relative;
+            padding-right: 40px;
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 3px;
+                background-color: red;
+                height: 100%;
+            }
+        }
+        &-title {
+            justify-content: space-between;
+            // &__line-side {
+            //     width: 2px;
+            //     height: 100%;
+            //     border: 2px orange solid;
+            // }
+            // &__line-bottom {
+            // }
         }
     }
-}
-.benefits {
-    &-li {
-        border: 1px solid #e2e2e2;
-        // height: 102px;
-    }
-    &-span {
-        padding: 10px 0;
+    &-benefits {
+        &-item {
+            border: 2px #e2e2e2 solid;
+            height: 102px;
+            &__icon {
+                margin-right: 20px;
+                width: 30px;
+                min-width: 30px;
+                max-width: 30px;
+            }
+        }
     }
 }
