@@ -3,13 +3,16 @@
         &-text {
             position: relative;
             padding-right: 40px;
+            &::before {
+                display: none;
+            }
             &::after {
                 content: "";
                 position: absolute;
                 right: 0;
                 top: 0;
-                width: 3px;
-                background-color: red;
+                width: 5px;
+                background-color: $clr-main;
                 height: 100%;
             }
         }
@@ -27,6 +30,7 @@
     &-benefits {
         &-item {
             border: 2px #e2e2e2 solid;
+            border-collapse: collapse;
             height: 102px;
             &__icon {
                 margin-right: 20px;
@@ -37,3 +41,31 @@
         }
     }
 }
+
+// @media (max-width: 1024px) {
+
+// }
+@media (max-width: 768px) {
+    .about {
+        &-block {
+            &-text {
+                &::before {
+                    display: block;
+                    //     content: "";
+                    //     position: absolute;
+                    //     left: 0;
+                    //     bottom: -8px;
+                    //     width: 20%;
+                    //     background-color: $clr-main;
+                    //     height: 5px;
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+// @media (max-width: 360px) {
+
+// }

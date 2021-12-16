@@ -1,8 +1,25 @@
 .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url("/assets/img/ys02.png"), url("/assets/img/background.png");
     background-position: right 20% bottom 0%;
     background-repeat: no-repeat;
     height: 770px;
+    &__title {
+        color: $clr-main;
+        font-size: 48px;
+    }
+    &__subtitle {
+        color: white;
+        font-size: 48px;
+        padding-bottom: 24px;
+    }
+    &__span {
+        color: white;
+        font-size: 18px;
+        padding-bottom: 48px;
+    }
 }
 @media (max-width: 1024px) {
     .hero {

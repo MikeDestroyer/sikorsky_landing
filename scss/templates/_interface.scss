@@ -6,3 +6,30 @@ section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.title {
+    position: relative;
+    padding-bottom: 40px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 28px;
+        width: 80px;
+        background-color: $clr-main;
+        height: 5px;
+    }
+}
+.btn {
+    height: 55px;
+}
+
+.btn-primary {
+    background-color: $clr-main !important;
+    border-color: $clr-main !important;
+    border-radius: 35px !important;
+    &:hover {
+        background-color: darken($color: $clr-main, $amount: 5) !important;
+        border-color: $clr-main !important;
+    }
+}
